@@ -49,7 +49,7 @@ def main(image_abs_path):
         plt.imshow(binary_inv_img, cmap='gray')
         plt.title('Binary inverse')
 
-    _,contours, hierarchy = cv2.findContours(binary_inv_img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+    contours, hierarchy = cv2.findContours(binary_inv_img,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
 
     ans = []
     ret = []
